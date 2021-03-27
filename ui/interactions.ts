@@ -1,4 +1,5 @@
 import { IResults } from "../model/results";
+import messages from "./strings";
 
 const FIRST_CHOICE = 1;
 const SECOND_CHOICE = 2;
@@ -21,5 +22,6 @@ export const showMessage = (message: string): void => {
 
 //TODO: passar apenas o console.table
 export const showResults = (data: IResults[]): void => {
+  showMessage(messages.showResult)
   console.table(data);
 };

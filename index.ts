@@ -27,10 +27,9 @@ const main = () => {
         // calcular rating
         // atualizar estado global
         const newData = compareData(setDefaultRatings(data));
-
         showResults(newData.sort(sortByRating))
+        showMessage(messages.goodbye)
       });
-
 
 }
 
