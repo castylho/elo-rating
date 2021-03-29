@@ -26,7 +26,7 @@ export const updateRating = ({
   }
 
   return {
-    updatedFirstRating: firstRating,
-    updatedSecondRating: secondRating,
+    updatedFirstRating: Number(firstRating.toFixed(2)),
+    updatedSecondRating: Number(secondRating.toFixed(2)),
   };
 };

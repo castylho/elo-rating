@@ -1,27 +1,25 @@
+import inquirer from "inquirer";
 import { IResults } from "../model/results";
 import messages from "./strings";
 
-const FIRST_CHOICE = 1;
-const SECOND_CHOICE = 2;
+const generateQuestions = (options: string[]) => [
+  {
+    type: "list",
+    name: "choice",
+    message: messages.makeChoice,
+    choices: options,
+  },
+];
 
-const isInputValid = (userInput: string): boolean => {
-  const convertedInput = Number(userInput);
-  return convertedInput === FIRST_CHOICE || convertedInput === SECOND_CHOICE;
+export const question = async (options: string[]): Promise<string> => {
+  const { choice } = await inquirer.prompt(generateQuestions(options));
+
+  return choice;
 };
 
-//TODO: implement
-export const question = (): string => {
-  const answer = "";
-  return answer;
-};
+export const showMessage = (message: string): void => console.log(message);
 
-//TODO: passar apenas o console.log
-export const showMessage = (message: string): void => {
-  console.log(message);
-};
-
-//TODO: passar apenas o console.table
 export const showResults = (data: IResults[]): void => {
-  showMessage(messages.showResult)
+  showMessage(messages.showResult);
   console.table(data);
 };
