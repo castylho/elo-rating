@@ -1,8 +1,3 @@
-<!-- - oq faz esse projeto
-    - algoritmo
-    - objetivo
-    - arquivo .txt como flag (add exemplo) -->
-
 # Objective
 This projet tries to give a sense of priority on whatever list your making on your mind.
 
