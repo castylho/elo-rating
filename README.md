@@ -1,3 +1,5 @@
+
+
 # Objective
 This projet tries to give a sense of priority on whatever list your making on your mind.
 
@@ -12,4 +14,4 @@ It uses the [ELO Rating Algorithm](https://www.geeksforgeeks.org/elo-rating-algo
 ### Example
 
 ` yarn start games.txt`
-![Demo-video](/uploads/8edc9fe3f1eb4c494239e3bde9baaac2/Screen_Recording_2021-04-04_at_16.10.34.mov)
+![Demo-video](https://user-images.githubusercontent.com/29663120/113519167-ec5f4e00-9560-11eb-8644-ac1a95200178.mov)
