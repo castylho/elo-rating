@@ -12,4 +12,4 @@ It uses the [ELO Rating Algorithm](https://www.geeksforgeeks.org/elo-rating-algo
 ### Example
 
 ` yarn start games.txt`
-
+![Demo-video](/uploads/8edc9fe3f1eb4c494239e3bde9baaac2/Screen_Recording_2021-04-04_at_16.10.34.mov)
